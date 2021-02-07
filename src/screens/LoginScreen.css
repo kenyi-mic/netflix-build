@@ -1,0 +1,110 @@
+.loginScreen {
+  position: relative;
+  height: 100%;
+  background: url("https://www.libe.ma/photo/art/grande/53233279-40356050.jpg?v=1611152075")
+    center no-repeat;
+  background-size: cover;
+}
+.loginScreenLogo {
+  position: fixed;
+  left: 0;
+  width: 150px;
+  padding-left: 20px;
+  object-fit: contain;
+}
+.loginScreenButton {
+  border-radius: 4%;
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #e50914;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: all 0.3s ease;
+}
+.loginScreenGradient {
+  width: 100%;
+  z-index: 1;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.4);
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8) 0,
+    rgba(0, 0, 0, 0) 60%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+}
+.loginScreenBody {
+  position: absolute;
+  top: 30%;
+  z-index: 1;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding: 20px;
+  color: #fff;
+  right: 0;
+  left: 0;
+}
+.loginScreenBody > h1 {
+  font-size: 3.125rem;
+  margin-bottom: 20px;
+}
+.loginScreenBody > h2 {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 30px;
+  opacity: 0.8;
+}
+.loginScreenBody > h3 {
+  padding-top: px;
+  padding-bottom: 30px;
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+.loginScreenInput > form > input {
+  padding: 10px;
+  outline-width: 0;
+  height: 30px;
+  width: 30%;
+  border: none;
+  max-width: 600px;
+}
+.loginScreenGetStarted {
+  padding: 16px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #e50914;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.loginScreenGetStarted:hover,
+.loginScreenButton:hover {
+  background-color: #bd2121;
+}
+@media (max-width: 782px) {
+  .loginScreenBody > h1 {
+    font-size: 2rem;
+  }
+  .loginScreenBody > h2 {
+    font-size: 1.1rem;
+  }
+  .loginScreenInput > form > input {
+    width: 50%;
+  }
+}
+@media (max-width: 453px) {
+  .loginScreenInput > form > input {
+    width: 50%;
+  }
+  .loginScreenGetStarted {
+    padding: 5px 10px;
+    font-size: 0.8rem;
+  }
+}

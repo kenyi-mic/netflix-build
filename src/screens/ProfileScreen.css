@@ -1,0 +1,137 @@
+.profileScreenBody {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 0 auto;
+  padding-top: 8%;
+  max-width: 800px;
+}
+.profileScreen {
+  height: 100vh;
+  color: #fff;
+}
+.profileScreenInfo {
+  display: flex;
+}
+.profileImageContainer {
+  width: 100px;
+  height: 100px;
+  position: relative;
+}
+.profileImageContainer > img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+.imageOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  opacity: 0;
+}
+.imageOverlay > .MuiSvgIcon-root {
+  color: #fff !important;
+  font-size: 30px;
+}
+.imageOverlay:hover {
+  opacity: 1;
+}
+.profileScreenBody > h1 {
+  font-size: 60px;
+  font-weight: 400;
+  border-bottom: 1px solid #282c2d;
+  margin-bottom: 20px;
+}
+.profileScreenDetails {
+  color: #fff;
+  margin-left: 25px;
+  flex: 1;
+}
+.profileScreenDetails > h2 {
+  background-color: gray;
+  padding: 15px;
+  font-size: 15px;
+  padding-left: 20px;
+}
+.signoutButtonProfileScreen {
+  padding: 10px 20px;
+  font-size: 1rem;
+  width: 100%;
+  margin-top: 5%;
+  background-color: #e50914;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  color: #fff;
+}
+.profileScreenPlans > h3 {
+  border-bottom: 1px solid #282c2d;
+  padding-bottom: 10px;
+  color: #fff;
+}
+.profileScreenPlans {
+  margin-top: 20px;
+}
+.profileImageUrlInput {
+  height: 30px;
+  padding: 0 10px;
+  margin-bottom: 20px;
+  outline: none;
+  border: none;
+  width: 90%;
+}
+.profileImageForm {
+  width: 100%;
+}
+.profileImageForm > button {
+  height: 30px;
+  width: 10%;
+  background-color: #e50914;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.hiddenProfileUrlForm {
+  display: none;
+}
+.profileScreenPlans {
+  color: #d8d7d7;
+}
+.planContainer {
+  margin-top: 20px;
+}
+.planPackage {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+}
+.planPackage > button {
+  height: 35px;
+  background-color: #e50914;
+  border: none;
+  outline: none;
+  color: #fff;
+  padding: 5px 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.planPackage > .currentPackage {
+  background-color: #a09a9a;
+  color: #fff;
+  pointer-events: none;
+}
+.planPackage:hover {
+  opacity: 0.7;
+}
