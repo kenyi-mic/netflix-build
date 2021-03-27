@@ -1,6 +1,7 @@
 .row {
   color: #fff;
   margin-left: 20px;
+  margin-top: 20px;
 }
 .rowPosters {
   display: flex;
@@ -15,6 +16,7 @@
   width: 100%;
   transition: transform 0.35s;
   cursor: pointer;
+  margin: 20px 0 20px 20px;
 }
 .rowPosters::-webkit-scrollbar {
   border: 1px solid rgb(90, 90, 90);
@@ -30,9 +32,10 @@
   max-height: 500px;
   transition: transform 0.45s;
   cursor: pointer;
+  margin: 50px 0 50px 20px;
 }
 .rowPosterLarge:hover {
-  transform: scale(1.3);
+  transform: scale(1.2);
   opacity: 1;
 }
 @media (max-width: 530px) {
