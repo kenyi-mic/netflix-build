@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { useSelector } from "react-redux";
 import { selectUser } from "../features/userSlice";
-import db, { auth } from "../firebase";
+import { auth } from "../firebase";
 import Nav from "../Nav";
 import "./ProfileScreen.css";
 import "./Plan";
@@ -58,7 +58,7 @@ const ProfileScreen = () => {
             <div className="profileScreenPlans">
               <h3>Plans (Current Plan: premium)</h3>
               <Plan />
-              <h4>Renewal date: 05/03/2021</h4>
+              <h4>Renewal date: 05/07/2022</h4>
               <div className="planContainer">
                 <div className="planPackage">
                   <div className="standartInfo">
